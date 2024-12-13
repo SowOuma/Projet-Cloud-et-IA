@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  application_flask:
+    build:
+      context: . 
+    ports:
+    # Mapper le port Flask
+      - "5000:5000"  
+    volumes:
+    # Montage du code dans le conteneur
+      - .:/app  
+    environment:
+    # Activer le mode développement pour Flask
+    
+      - FLASK_ENV=development  
