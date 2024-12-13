@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+# Ignorer les environnements virtuels Python
+env/
+venv/
+myenv/
 
 # C extensions
 *.so
